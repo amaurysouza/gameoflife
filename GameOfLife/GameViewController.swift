@@ -50,12 +50,13 @@ class GameViewController: UIViewController, SCNPhysicsContactDelegate {
     }
     
     func setupMatriz() -> [[SCNNode]]{
-
+        let tamanhoHor = 25
+        let tamanhoVert = 50
         let initializerNode = createDeadCubeNode(posX: 0, posY: 0)
-        var matriz = [[SCNNode]](repeating: [SCNNode](repeating: initializerNode, count: 25), count: 25)
+        var matriz = [[SCNNode]](repeating: [SCNNode](repeating: initializerNode, count: tamanhoVert), count: tamanhoHor)
         
-        for i in 0..<25{
-            for j in 0..<25{
+        for i in 0..<tamanhoHor{
+            for j in 0..<tamanhoVert{
                 let number = Int.random(in: 0..<5)
                 if number == 1{
                     matriz[i][j].removeFromParentNode()
@@ -106,7 +107,7 @@ class GameViewController: UIViewController, SCNPhysicsContactDelegate {
         if j<0{
             return false
         }
-        if j>matriz.count-1{
+        if j>matriz[0].count-1{
             return false
         }
         return true
@@ -118,7 +119,7 @@ class GameViewController: UIViewController, SCNPhysicsContactDelegate {
         var matrizAux = matriz
         
         for i in 0..<matriz.count{
-            for j in 0..<matriz.count{
+            for j in 0..<matriz[0].count{
                 var contadorDeVivos = 0
                 if validaVariavel(i: i-1, j: j){
                     if matriz[i-1][j].name == "vivo"{
