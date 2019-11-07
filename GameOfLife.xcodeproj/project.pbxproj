@@ -13,6 +13,8 @@
 		E38B6287236B518700B1457E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38B6286236B518700B1457E /* Assets.xcassets */; };
 		E38B628A236B518700B1457E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38B6288236B518700B1457E /* LaunchScreen.storyboard */; };
 		E38B629E236B6A5E00B1457E /* Scene.scn in Resources */ = {isa = PBXBuildFile; fileRef = E38B629D236B6A5E00B1457E /* Scene.scn */; };
+		E38D4A322374830C00A52AF0 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38D4A312374830C00A52AF0 /* Cube.swift */; };
+		E38D4A362374899400A52AF0 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38D4A352374899400A52AF0 /* GameManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E38B6289236B518700B1457E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E38B628B236B518700B1457E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38B629D236B6A5E00B1457E /* Scene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Scene.scn; sourceTree = "<group>"; };
+		E38D4A312374830C00A52AF0 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		E38D4A352374899400A52AF0 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				E38B627D236B518400B1457E /* AppDelegate.swift */,
 				E38B6281236B518400B1457E /* GameViewController.swift */,
 				E38B629D236B6A5E00B1457E /* Scene.scn */,
+				E38D4A352374899400A52AF0 /* GameManager.swift */,
 				E38B6283236B518400B1457E /* Main.storyboard */,
 				E38B6286236B518700B1457E /* Assets.xcassets */,
 				E38B6288236B518700B1457E /* LaunchScreen.storyboard */,
 				E38B628B236B518700B1457E /* Info.plist */,
+				E38D4A312374830C00A52AF0 /* Cube.swift */,
 			);
 			path = GameOfLife;
 			sourceTree = "<group>";
@@ -140,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38B6282236B518400B1457E /* GameViewController.swift in Sources */,
+				E38D4A362374899400A52AF0 /* GameManager.swift in Sources */,
 				E38B627E236B518400B1457E /* AppDelegate.swift in Sources */,
+				E38D4A322374830C00A52AF0 /* Cube.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
